@@ -6,7 +6,6 @@ interface Props {
   image: string;
   technologies: string[];
   githubUrl?: string;
-  deployUrl?: string;
 }
 
 export default function ProjectCard({ title, description, image, technologies, githubUrl }: Props) { // 2. Adicionado aqui
