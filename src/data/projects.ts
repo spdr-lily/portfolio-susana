@@ -15,6 +15,8 @@ export const projects: Project[] = [
     ],
     image: "/images/mind.png",
     featured: true,
+    githubUrl: "https://github.com/spdr-lily/m.i.n.d"
+    deployUrl: "https://jl5r2zr4-8000.brs.devtunnels.ms/login"
   },
   {
     id: 2,
@@ -23,6 +25,7 @@ export const projects: Project[] = [
       "Machine Learning supervisionado com Random Forest para predição de falhas em equipamentos industriais.",
     technologies: ["Machine Learning", "Random Forest", "Python", "Industrial"],
     image: "/images/dashboard.png",
+    githubUrl: "https://github.com/spdr-lily/random-forest-para-manutencao-preditiva"
   },
   {
     id: 3,
@@ -31,6 +34,7 @@ export const projects: Project[] = [
       "Backend em Flask com API REST e frontend interativo em Dash para visualização de dados.",
     technologies: ["Flask", "Dash", "API REST", "Deploy"],
     image: "/images/dashboard.png",
+    githubUrl: "https://github.com/spdr-lily/Projeto-de-Dashboard-e-Visualizacao-de-Dados"
   },
   {
     id: 4,
@@ -39,13 +43,15 @@ export const projects: Project[] = [
       "Modelagem e previsão de séries temporais aplicadas a indicadores de saúde e negócios.",
     technologies: ["Python", "Statsmodels", "Prophet", "Time Series"],
     image: "/images/etl.png",
+    githubUrl: "https://github.com/spdr-lily/analise-de-series-temporais-de-uma-empresa"
   },
   {
     id: 5,
-    title: "Visão Computacional e OCR",
+    title: "Processamento de Linguagem Natural (NLP)",
     description:
-      "Pipeline de extração de texto de documentos usando OpenCV e Tesseract.",
-    technologies: ["OpenCV", "OCR", "Tesseract", "Pipelines"],
+      "Chatbot com Wikipedia e análise de sentimentos usando NLTK e spaCy para compreensão de texto.",
+    technologies: ["NLTK", "spaCy", "Chatbot", "Sentiment Analysis"],
     image: "/images/etl.png",
+    githubUrl: "https://github.com/spdr-lily/chatbot-com-wikipedia"
   },
 ];

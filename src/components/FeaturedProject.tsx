@@ -44,7 +44,7 @@ export default function FeaturedProject({ project }: Props) {
 
           <div className="flex flex-wrap gap-3">
             <a
-              href="https://github.com/susana/mind"
+              href="https://github.com/spdr-lily/mind"
               target="_blank"
               rel="noopener noreferrer"
               className="px-5 py-2.5 rounded-md bg-slate-800 border border-slate-700 hover:border-cyan-500 text-slate-300 hover:text-cyan-300 transition-colors text-sm inline-flex items-center gap-2"

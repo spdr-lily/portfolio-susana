@@ -4,6 +4,7 @@ const events = [
   { year: "2024", title: "Início do projeto M.I.N.D." },
   { year: "2025", title: "Desenvolvimento do banco clínico" },
   { year: "2025", title: "Integração de escalas psicométricas" },
+  {year: "2026", title: "Formação no Curso Superior de Ciência de Dados com ênfase em IA" },
   { year: "2026", title: "Arquitetura de Machine Learning" },
 ];
 

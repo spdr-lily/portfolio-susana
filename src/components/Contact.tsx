@@ -11,7 +11,7 @@ export default function Contact() {
 
       <div className="flex flex-wrap gap-4">
         <a
-          href="https://github.com/susana"
+          href="https://github.com/spdr-lily"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center gap-2 px-5 py-3 rounded-md bg-slate-800 border border-slate-700 hover:border-cyan-500 text-slate-300 hover:text-cyan-300 transition-colors text-sm"
@@ -20,7 +20,7 @@ export default function Contact() {
           GitHub
         </a>
         <a
-          href="https://linkedin.com/in/susana"
+          href="https://www.linkedin.com/in/susana-c-b-carneiro-20a619235/?skipRedirect=true"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center gap-2 px-5 py-3 rounded-md bg-slate-800 border border-slate-700 hover:border-cyan-500 text-slate-300 hover:text-cyan-300 transition-colors text-sm"
@@ -29,7 +29,7 @@ export default function Contact() {
           LinkedIn
         </a>
         <a
-          href="mailto:susana@email.com"
+          href="mailto:campelosusana@gmail.com"
           className="inline-flex items-center gap-2 px-5 py-3 rounded-md bg-slate-800 border border-slate-700 hover:border-cyan-500 text-slate-300 hover:text-cyan-300 transition-colors text-sm"
         >
           <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
