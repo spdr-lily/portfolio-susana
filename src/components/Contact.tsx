@@ -20,7 +20,7 @@ export default function Contact() {
           GitHub
         </a>
         <a
-          href="https://www.linkedin.com/in/susana-c-b-carneiro-20a619235/?skipRedirect=true"
+          href="https://www.linkedin.com/in/susana-c-b-carneiro-20a619235"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center gap-2 px-5 py-3 rounded-md bg-slate-800 border border-slate-700 hover:border-cyan-500 text-slate-300 hover:text-cyan-300 transition-colors text-sm"

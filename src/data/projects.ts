@@ -1,21 +1,20 @@
 import type { Project } from "@/types";
 
 export const projects: Project[] = [
-  {
+ {
     id: 1,
     title: "M.I.N.D.",
-    description:
-      "Sistema open-source de apoio à decisão clínica baseado em DSM-5-TR, CID-11 e inferência probabilística.",
+    description: "Sistema open-source de apoio à decisão clínica baseado em DSM-5-TR, CID-11 e inferência probabilística.",
     technologies: [
       "FastAPI",
       "PostgreSQL",
       "Airflow",
       "Redis",
-      "Machine Learning",
+      "Machine Learning"
     ],
     image: "/images/mind.png",
     featured: true,
-    githubUrl: "https://github.com/spdr-lily/m.i.n.d"
+    githubUrl: "https://github.com/spdr-lily/m.i.n.d",
     deployUrl: "https://jl5r2zr4-8000.brs.devtunnels.ms/login"
   },
   {
