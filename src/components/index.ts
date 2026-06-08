@@ -1,6 +1,12 @@
 export { default as Navbar } from "./Navbar";
 export { default as Hero } from "./Hero";
 export { default as About } from "./About";
+export { default as Competencias } from "./Competencias";
+export { default as Timeline } from "./Timeline";
 export { default as Projects } from "./Projects";
-export { default as Contact } from "./Contact";
+export { default as FeaturedProject } from "./FeaturedProject";
 export { default as ProjectCard } from "./ProjectCard";
+export { default as Certificacoes } from "./Certificacoes";
+export { default as Contact } from "./Contact";
+export { default as Footer } from "./Footer";
+export { default as SectionHeading } from "./SectionHeading";

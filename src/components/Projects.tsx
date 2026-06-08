@@ -1,23 +1,27 @@
 import { projects } from "@/data/projects";
 import ProjectCard from "./ProjectCard";
+import FeaturedProject from "./FeaturedProject";
+import SectionHeading from "./SectionHeading";
 
 export default function Projects() {
+  const featured = projects.find((p) => p.featured);
+  const others = projects.filter((p) => !p.featured);
+
   return (
     <section id="projects">
-      <h2 className="text-3xl sm:text-4xl font-bold text-zinc-50 mb-4">
-        Projetos
-      </h2>
+      <SectionHeading title="Projetos" />
 
-      <div className="w-20 h-1 bg-gradient-to-r from-violet-600 to-pink-500 rounded-full mb-12" />
+      {featured && <FeaturedProject project={featured} />}
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {projects.map((project) => (
-            <ProjectCard
-              key={project.id}
-              title={project.title}
-              description={project.description}
-              image={project.image}
-            />
+      <div id="projects-grid" className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {others.map((project) => (
+          <ProjectCard
+            key={project.id}
+            title={project.title}
+            description={project.description}
+            image={project.image}
+            technologies={project.technologies}
+          />
         ))}
       </div>
     </section>
