@@ -2,7 +2,7 @@ import SectionHeading from "./SectionHeading";
 
 export default function Certificacoes() {
   return (
-    <section id="certificacoes">
+    <section id="certificacoes" className="animate-fade-up">
       <SectionHeading title="Certificações" />
 
       <div className="rounded-md border border-slate-700 bg-slate-800/30 p-6 max-w-md">

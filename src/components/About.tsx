@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <section id="about">
+    <section id="about" className="animate-fade-up">
       <div className="max-w-3xl mx-auto text-center">
         <h2 className="text-3xl sm:text-4xl font-bold text-slate-50 mb-6">
           Sobre Mim

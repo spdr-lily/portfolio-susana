@@ -2,7 +2,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="min-h-screen flex items-center justify-center"
+      className="min-h-screen flex items-center justify-center animate-fade-in"
     >
       <div className="max-w-3xl mx-auto text-center">
         <div className="inline-block px-4 py-1.5 mb-6 rounded-full border border-cyan-500/30 bg-cyan-500/10 text-cyan-300 text-sm font-medium">

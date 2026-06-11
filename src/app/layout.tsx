@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "../styles/globals.css";
 
@@ -14,7 +14,29 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Susana Campelo | Data Scientist",
-  description: "Portfólio profissional de Ciência de Dados",
+  description:
+    "Portfólio profissional de Ciência de Dados — soluções inteligentes com Machine Learning, Engenharia de Dados e IA para apoio à decisão clínica.",
+  keywords: [
+    "Data Science",
+    "Machine Learning",
+    "Data Engineer",
+    "Portfolio",
+    "Python",
+    "FastAPI",
+    "Susana Campelo",
+  ],
+  openGraph: {
+    title: "Susana Campelo | Data Scientist",
+    description:
+      "Portfólio profissional de Ciência de Dados com projetos em ML, NLP e sistemas de apoio à decisão.",
+    type: "website",
+    locale: "pt_BR",
+  },
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
 };
 
 export default function RootLayout({
@@ -23,10 +45,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-      <html
-        lang="pt-BR"
-        className={`${geistSans.variable} ${geistMono.variable} scroll-smooth`}
-      >
+    <html
+      lang="pt-BR"
+      className={`${geistSans.variable} ${geistMono.variable} scroll-smooth`}
+    >
       <body>{children}</body>
     </html>
   );

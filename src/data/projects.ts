@@ -15,7 +15,7 @@ export const projects: Project[] = [
     image: "/images/mind.png",
     featured: true,
     githubUrl: "https://github.com/spdr-lily/m.i.n.d",
-    deployUrl: "https://jl5r2zr4-8000.brs.devtunnels.ms/login"
+    deployUrl: "https://mind.local"
   },
   {
     id: 2,

@@ -10,7 +10,7 @@ const events = [
 
 export default function Timeline() {
   return (
-    <section id="timeline">
+    <section id="timeline" className="animate-fade-up">
       <SectionHeading title="Timeline" />
 
       <div className="relative">

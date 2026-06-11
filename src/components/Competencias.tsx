@@ -8,7 +8,7 @@ const skills = [
 
 export default function Competencias() {
   return (
-    <section id="competencias">
+    <section id="competencias" className="animate-fade-up">
       <SectionHeading title="Habilidades" />
 
       <div className="flex flex-wrap gap-3">

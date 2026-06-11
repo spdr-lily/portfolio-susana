@@ -8,7 +8,7 @@ interface Props {
   githubUrl?: string;
 }
 
-export default function ProjectCard({ title, description, image, technologies, githubUrl }: Props) { // 2. Adicionado aqui
+export default function ProjectCard({ title, description, image, technologies, githubUrl }: Props) {
   return (
     <div className="rounded-md border border-slate-700 bg-slate-800/30 overflow-hidden">
       <div className="relative h-44 overflow-hidden">
@@ -26,7 +26,7 @@ export default function ProjectCard({ title, description, image, technologies, g
         <p className="text-sm text-slate-400 leading-relaxed mb-4">
           {description}
         </p>
-        <div className="flex flex-wrap gap-2 mb-6"> {/* Adicionei um mb-6 aqui para afastar os botões */}
+        <div className="flex flex-wrap gap-2 mb-6">
           {technologies.map((tech) => (
             <span
               key={tech}
@@ -37,7 +37,6 @@ export default function ProjectCard({ title, description, image, technologies, g
           ))}
         </div>
 
-        {/* 3. BLOCO DOS BOTÕES ADICIONADO AQUI */}
         <div className="flex gap-3">
           {githubUrl && (
             <a
@@ -46,7 +45,6 @@ export default function ProjectCard({ title, description, image, technologies, g
               rel="noopener noreferrer"
               className="flex items-center gap-2 px-4 py-2 text-sm font-medium rounded-md bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 transition-colors"
             >
-              {/* Se você não tiver uma biblioteca de ícones instalada (como lucide-react ou react-icons), use um SVG do GitHub ou apenas o texto por enquanto */}
               <span>GitHub</span>
             </a>
           )}

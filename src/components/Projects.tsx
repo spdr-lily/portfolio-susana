@@ -8,7 +8,7 @@ export default function Projects() {
   const others = projects.filter((p) => !p.featured);
 
   return (
-    <section id="projects">
+    <section id="projects" className="animate-fade-up">
       <SectionHeading title="Projetos" />
 
       {featured && <FeaturedProject project={featured} />}

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 
 const links = [
   { href: "/", label: "Home" },
@@ -18,9 +19,9 @@ export default function Navbar() {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-[#0f172a]/80 backdrop-blur-md border-b border-slate-800">
       <div className="max-w-5xl mx-auto flex items-center justify-between px-6 py-4">
-        <a href="/" className="text-xl font-bold text-cyan-400">
+        <Link href="/" className="text-xl font-bold text-cyan-400">
           SC
-        </a>
+        </Link>
 
         <ul className="hidden md:flex items-center gap-6">
           {links.map((link) => (

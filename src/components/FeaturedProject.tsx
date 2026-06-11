@@ -6,8 +6,6 @@ interface Props {
 }
 
 export default function FeaturedProject({ project }: Props) {
-  const tech = ["FastAPI", "PostgreSQL", "Airflow", "Redis", "Machine Learning"];
-
   return (
     <div className="rounded-md border border-slate-700 bg-slate-800/50 mb-16">
       <div className="grid md:grid-cols-2 gap-8 items-center p-8 md:p-12">
@@ -32,7 +30,7 @@ export default function FeaturedProject({ project }: Props) {
           </p>
 
           <div className="flex flex-wrap gap-2 mb-6">
-            {tech.map((t) => (
+            {project.technologies.map((t) => (
               <span
                 key={t}
                 className="px-3 py-1.5 text-sm font-medium rounded-md bg-slate-800 text-slate-300 border border-slate-700"
