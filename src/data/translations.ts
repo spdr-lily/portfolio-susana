@@ -289,6 +289,7 @@ Migrar a engine de busca para uma arquitetura RAG (Retrieval-Augmented Generatio
     timeline: {
       title: "Timeline",
       events: [
+        "Início do curso superior de Ciência de Dados",
         "Início do projeto M.I.N.D.",
         "Desenvolvimento do banco clínico",
         "Integração de escalas psicométricas",
@@ -624,6 +625,7 @@ Migrate the search engine to a RAG (Retrieval-Augmented Generation) architecture
     timeline: {
       title: "Timeline",
       events: [
+        "Started Data Science degree",
         "M.I.N.D. project started",
         "Clinical database development",
         "Psychometric scales integration",

@@ -6,11 +6,12 @@ import { useLanguage } from "@/context/LanguageContext";
 export default function Timeline() {
   const { t } = useLanguage();
   const events = [
-    { year: "2024", title: t.timeline.events[0] },
-    { year: "2025", title: t.timeline.events[1] },
+    { year: "2023", title: t.timeline.events[0] },
+    { year: "2024", title: t.timeline.events[1] },
     { year: "2025", title: t.timeline.events[2] },
-    { year: "2026", title: t.timeline.events[3] },
+    { year: "2025", title: t.timeline.events[3] },
     { year: "2026", title: t.timeline.events[4] },
+    { year: "2026", title: t.timeline.events[5] },
   ];
 
   return (
