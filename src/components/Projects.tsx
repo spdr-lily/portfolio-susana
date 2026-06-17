@@ -1,15 +1,23 @@
+"use client";
+
 import { projects } from "@/data/projects";
 import ProjectCard from "./ProjectCard";
 import FeaturedProject from "./FeaturedProject";
 import SectionHeading from "./SectionHeading";
+import { useLanguage } from "@/context/LanguageContext";
 
 export default function Projects() {
-  const featured = projects.find((p) => p.featured);
-  const others = projects.filter((p) => !p.featured);
+  const { t } = useLanguage();
+  const all = projects.map((p, i) => {
+    const pt = t.projectData[i];
+    return pt ? { ...p, title: pt.title, description: pt.description, details: pt.details ?? p.details } : p;
+  });
+  const featured = all.find((p) => p.featured);
+  const others = all.filter((p) => !p.featured);
 
   return (
     <section id="projects" className="animate-fade-up">
-      <SectionHeading title="Projetos" />
+      <SectionHeading title={t.projects.title} />
 
       {featured && <FeaturedProject project={featured} />}
 
@@ -22,6 +30,7 @@ export default function Projects() {
             image={project.image}
             technologies={project.technologies}
             githubUrl={project.githubUrl}
+            details={project.details}
           />
         ))}
       </div>

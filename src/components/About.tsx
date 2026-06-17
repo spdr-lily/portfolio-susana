@@ -1,16 +1,18 @@
+"use client";
+
+import { useLanguage } from "@/context/LanguageContext";
+
 export default function About() {
+  const { t } = useLanguage();
+
   return (
     <section id="about" className="animate-fade-up">
       <div className="max-w-3xl mx-auto text-center">
         <h2 className="text-3xl sm:text-4xl font-bold text-slate-50 mb-6">
-          Sobre Mim
+          {t.about.title}
         </h2>
         <p className="text-slate-400 leading-relaxed text-base sm:text-lg">
-          Atualmente desenvolvo o projeto{" "}
-          <strong className="text-cyan-300">M.I.N.D.</strong>{" "}
-          (Mental Intelligence &amp; Network Data),
-          um sistema open-source de apoio à decisão clínica
-          baseado em DSM-5-TR, CID-11 e inferência probabilística.
+          {t.about.text}
         </p>
       </div>
     </section>

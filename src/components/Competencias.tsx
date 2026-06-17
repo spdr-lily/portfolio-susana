@@ -1,15 +1,28 @@
+"use client";
+
 import SectionHeading from "./SectionHeading";
+import { useLanguage } from "@/context/LanguageContext";
 
 const skills = [
-  "Python", "SQL", "R", "PostgreSQL", "FastAPI",
-  "Docker", "Airflow", "Pandas", "NumPy", "Scikit-Learn",
-  "Git", "Linux",
+  "Python", "R", "SQL", "Pandas", "NumPy", "Scikit-Learn",
+  "Machine Learning", "MLOps", "Estatística Aplicada", "Estatística Bayesiana",
+  "Power BI", "DAX", "Power Query", "Data Visualization", "ETL",
+  "Apache Airflow", "Apache Spark", "Apache Flink", "Data Modeling", "Data Warehousing",
+  "PostgreSQL", "MongoDB (NoSQL)", "Elasticsearch",
+  "Flask", "Dash", "Plotly",
+  "AWS", "Docker", "Git", "GitHub Actions", "CI/CD", "DevOps", "Linux", "Windows",
+  "Infraestrutura de Redes", "Segurança da Informação",
+  "OpenCV", "OCR",
+  "LGPD", "ITIL 4", "Metodologias Ágeis (Scrum e Kanban)",
+  "Documentação Técnica", "UI/UX",
 ];
 
 export default function Competencias() {
+  const { t } = useLanguage();
+
   return (
     <section id="competencias" className="animate-fade-up">
-      <SectionHeading title="Habilidades" />
+      <SectionHeading title={t.competencias.title} />
 
       <div className="flex flex-wrap gap-3">
         {skills.map((skill) => (

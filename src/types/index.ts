@@ -7,4 +7,5 @@ export interface Project {
   featured?: boolean;
   githubUrl?: string;
   deployUrl?: string;
+  details?: string;
 }

@@ -1,17 +1,21 @@
-import SectionHeading from "./SectionHeading";
+"use client";
 
-const events = [
-  { year: "2024", title: "Início do projeto M.I.N.D." },
-  { year: "2025", title: "Desenvolvimento do banco clínico" },
-  { year: "2025", title: "Integração de escalas psicométricas" },
-  {year: "2026", title: "Formação no Curso Superior de Ciência de Dados com ênfase em IA" },
-  { year: "2026", title: "Arquitetura de Machine Learning" },
-];
+import SectionHeading from "./SectionHeading";
+import { useLanguage } from "@/context/LanguageContext";
 
 export default function Timeline() {
+  const { t } = useLanguage();
+  const events = [
+    { year: "2024", title: t.timeline.events[0] },
+    { year: "2025", title: t.timeline.events[1] },
+    { year: "2025", title: t.timeline.events[2] },
+    { year: "2026", title: t.timeline.events[3] },
+    { year: "2026", title: t.timeline.events[4] },
+  ];
+
   return (
     <section id="timeline" className="animate-fade-up">
-      <SectionHeading title="Timeline" />
+      <SectionHeading title={t.timeline.title} />
 
       <div className="relative">
         <div className="absolute left-4 top-0 bottom-0 w-px bg-slate-700" />
