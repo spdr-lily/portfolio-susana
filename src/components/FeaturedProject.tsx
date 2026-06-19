@@ -10,18 +10,19 @@ interface Props {
 }
 
 export default function FeaturedProject({ project }: Props) {
-  const { t } = useLanguage();
+  const { t, lang } = useLanguage();
   const [showReadme, setShowReadme] = useState(false);
   const [readmeContent, setReadmeContent] = useState("");
 
   useEffect(() => {
-    if (showReadme && !readmeContent) {
-      fetch("/README_PORTIFOLIO.md")
+    if (showReadme) {
+      const file = lang === "en" ? "/README_PORTIFOLIO_EN.md" : "/README_PORTIFOLIO.md";
+      fetch(file)
         .then((r) => r.text())
         .then(setReadmeContent)
         .catch(() => setReadmeContent("Erro ao carregar o README."));
     }
-  }, [showReadme, readmeContent]);
+  }, [showReadme, lang]);
 
   return (
     <>
