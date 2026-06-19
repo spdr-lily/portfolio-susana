@@ -4,35 +4,6 @@ const translations = {
       {
         title: "M.I.N.D.",
         description: "Sistema open-source de apoio à decisão clínica baseado em DSM-5-TR, CID-11 e inferência probabilística.",
-        details: `M.I.N.D. — Mental Inference & Neurocognitive Diagnostics
-
-Sistema open-source de apoio à decisão clínica em saúde mental, baseado nos critérios diagnósticos do DSM-5-TR e CID-11, combinando inferência probabilística bayesiana com pipelines automatizados de dados.
-
-Arquitetura
-
-O M.I.N.D. é estruturado em três camadas principais:
-
-1. Ingestão de Dados Clínicos: Coleta e padronização de sintomas relatados pelo paciente via questionários estruturados e escalas psicométricas.
-
-2. Motor de Inferência Probabilística: Aplica o raciocínio bayesiano para calcular probabilidades de hipóteses diagnósticas com base nos critérios preenchidos, reduzindo o viés de heurísticas clínicas.
-
-3. Pipeline de Dados (Airflow): Automatiza a extração, transformação e carga (ETL) dos registros clínicos, garantindo reprodutibilidade e rastreabilidade das análises.
-
-Stack Tecnológica
-
-- FastAPI => API RESTful de alta performance para o backend.
-- PostgreSQL => Banco de dados relacional para persistência dos registros clínicos e scores diagnósticos.
-- Apache Airflow => Orquestração dos pipelines de dados e atualização dos modelos probabilísticos.
-- Redis => Cache de sessão e suporte a filas de processamento assíncrono.
-- Machine Learning => Modelos auxiliares para análise de sentimentos e triagem preliminar de sintomas.
-
-Funcionalidades
-
-- Mapeamento dinâmico de sintomas para critérios do DSM-5-TR e CID-11.
-- Cálculo de probabilidade diagnóstica por inferência bayesiana.
-- Dashboard de visualização dos scores e histórico do paciente.
-- Pipeline ETL automatizado com Airflow para atualização dos dados clínicos.
-- API REST documentada com Swagger/OpenAPI.`,
       },
       {
         title: "Sistema de Manutenção Preditiva",
@@ -370,35 +341,6 @@ Migrar a engine de busca para uma arquitetura RAG (Retrieval-Augmented Generatio
       {
         title: "M.I.N.D.",
         description: "Open-source clinical decision support system based on DSM-5-TR, ICD-11 and probabilistic inference.",
-        details: `M.I.N.D. — Mental Inference & Neurocognitive Diagnostics
-
-Open-source clinical decision support system for mental health, based on DSM-5-TR and ICD-11 diagnostic criteria, combining Bayesian probabilistic inference with automated data pipelines.
-
-Architecture
-
-M.I.N.D. is structured in three main layers:
-
-1. Clinical Data Ingestion: Collection and standardization of patient-reported symptoms through structured questionnaires and psychometric scales.
-
-2. Probabilistic Inference Engine: Applies Bayesian reasoning to calculate diagnostic hypothesis probabilities based on filled criteria, reducing clinical heuristic bias.
-
-3. Data Pipeline (Airflow): Automates extraction, transformation and loading (ETL) of clinical records, ensuring reproducibility and traceability of analyses.
-
-Tech Stack
-
-- FastAPI => High-performance RESTful API for the backend.
-- PostgreSQL => Relational database for persisting clinical records and diagnostic scores.
-- Apache Airflow => Data pipeline orchestration and probabilistic model updates.
-- Redis => Session caching and async processing queue support.
-- Machine Learning => Auxiliary models for sentiment analysis and preliminary symptom screening.
-
-Features
-
-- Dynamic symptom mapping to DSM-5-TR and ICD-11 criteria.
-- Diagnostic probability calculation via Bayesian inference.
-- Dashboard for score visualization and patient history.
-- Automated ETL pipeline with Airflow for clinical data updates.
-- REST API documented with Swagger/OpenAPI.`,
       },
       {
         title: "Predictive Maintenance System",

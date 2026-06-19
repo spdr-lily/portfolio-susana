@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import type { Project } from "@/types";
 import { useLanguage } from "@/context/LanguageContext";
 
@@ -12,6 +12,16 @@ interface Props {
 export default function FeaturedProject({ project }: Props) {
   const { t } = useLanguage();
   const [showReadme, setShowReadme] = useState(false);
+  const [readmeContent, setReadmeContent] = useState("");
+
+  useEffect(() => {
+    if (showReadme && !readmeContent) {
+      fetch("/README_PORTIFOLIO.md")
+        .then((r) => r.text())
+        .then(setReadmeContent)
+        .catch(() => setReadmeContent("Erro ao carregar o README."));
+    }
+  }, [showReadme, readmeContent]);
 
   return (
     <>
@@ -70,14 +80,12 @@ export default function FeaturedProject({ project }: Props) {
                   {t.featured.deploy}
                 </a>
               )}
-              {project.details && (
-                <button
-                  onClick={() => setShowReadme(true)}
-                  className="px-5 py-2.5 rounded-md bg-slate-800 border border-slate-700 hover:border-cyan-500 text-slate-300 hover:text-cyan-300 transition-colors text-sm"
-                >
-                  {t.featured.readme}
-                </button>
-              )}
+              <button
+                onClick={() => setShowReadme(true)}
+                className="px-5 py-2.5 rounded-md bg-slate-800 border border-slate-700 hover:border-cyan-500 text-slate-300 hover:text-cyan-300 transition-colors text-sm"
+              >
+                {t.featured.readme}
+              </button>
               <a href="#projects-grid" className="px-5 py-2.5 rounded-md bg-slate-800 border border-slate-700 hover:border-cyan-500 text-slate-300 hover:text-cyan-300 transition-colors text-sm">
                 {t.featured.others}
               </a>
@@ -107,7 +115,7 @@ export default function FeaturedProject({ project }: Props) {
             <h2 className="text-2xl font-bold text-slate-50 mb-6">{project.title}</h2>
 
             <div className="text-slate-300 leading-relaxed space-y-4 whitespace-pre-line">
-              {project.details}
+              {readmeContent || "Carregando..."}
             </div>
           </div>
         </div>
