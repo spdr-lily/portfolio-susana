@@ -285,6 +285,19 @@ Migrar a engine de busca para uma arquitetura RAG (Retrieval-Augmented Generatio
     },
     competencias: {
       title: "Habilidades",
+      skills: [
+        "Python", "R", "SQL", "Pandas", "NumPy", "Scikit-Learn",
+        "Machine Learning", "MLOps", "Estatística Aplicada", "Estatística Bayesiana",
+        "Power BI", "DAX", "Power Query", "Data Visualization", "ETL",
+        "Apache Airflow", "Apache Spark", "Apache Flink", "Data Modeling", "Data Warehousing",
+        "PostgreSQL", "MongoDB (NoSQL)", "Elasticsearch",
+        "Flask", "Dash", "Plotly",
+        "AWS", "Docker", "Git", "GitHub Actions", "CI/CD", "DevOps", "Linux", "Windows",
+        "Infraestrutura de Redes", "Segurança da Informação",
+        "OpenCV", "OCR",
+        "LGPD", "ITIL 4", "Metodologias Ágeis (Scrum e Kanban)",
+        "Documentação Técnica", "UI/UX",
+      ],
     },
     timeline: {
       title: "Timeline",
@@ -622,6 +635,19 @@ Migrate the search engine to a RAG (Retrieval-Augmented Generation) architecture
     },
     competencias: {
       title: "Skills",
+      skills: [
+        "Python", "R", "SQL", "Pandas", "NumPy", "Scikit-Learn",
+        "Machine Learning", "MLOps", "Applied Statistics", "Bayesian Statistics",
+        "Power BI", "DAX", "Power Query", "Data Visualization", "ETL",
+        "Apache Airflow", "Apache Spark", "Apache Flink", "Data Modeling", "Data Warehousing",
+        "PostgreSQL", "MongoDB (NoSQL)", "Elasticsearch",
+        "Flask", "Dash", "Plotly",
+        "AWS", "Docker", "Git", "GitHub Actions", "CI/CD", "DevOps", "Linux", "Windows",
+        "Network Infrastructure", "Information Security",
+        "OpenCV", "OCR",
+        "LGPD", "ITIL 4", "Agile Methodologies (Scrum and Kanban)",
+        "Technical Documentation", "UI/UX",
+      ],
     },
     timeline: {
       title: "Timeline",
